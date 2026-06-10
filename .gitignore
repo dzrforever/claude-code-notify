@@ -1,0 +1,5 @@
+# Local config with your real ntfy topic — never commit this.
+notify.conf
+
+# macOS noise
+.DS_Store

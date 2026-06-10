@@ -1,0 +1,21 @@
+# Copy this file to notify.conf and fill in your own values.
+# notify.conf is gitignored so your real topic never gets committed.
+
+# Your unique ntfy topic. Subscribe to the same name in the ntfy app on your phone.
+# Pick something long and random — anyone who knows it can push to / read your alerts.
+NTFY_TOPIC="claude-yourname-<random-string>"
+
+# Seconds the terminal must stay unfocused before you get alerted.
+DELAY=30
+
+# Focus poll interval in seconds.
+POLL_INTERVAL=3
+
+# Self-hosted ntfy server, if you run one. Defaults to the public ntfy.sh.
+# NTFY_SERVER="https://ntfy.sh"
+
+# Fallback app to focus on notification click if frontmost-app detection fails.
+# FALLBACK_APP="com.apple.Terminal"
+
+# Path to terminal-notifier (brew install terminal-notifier).
+# TN="/opt/homebrew/bin/terminal-notifier"
