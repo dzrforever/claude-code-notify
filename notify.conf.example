@@ -1,9 +1,8 @@
 # Copy this file to notify.conf and fill in your own values.
-# notify.conf is gitignored so your real topic never gets committed.
+# notify.conf is gitignored so your real key never gets committed.
 
-# Your unique ntfy topic. Subscribe to the same name in the ntfy app on your phone.
-# Pick something long and random — anyone who knows it can push to / read your alerts.
-NTFY_TOPIC="claude-yourname-<random-string>"
+# Your Bark device key (from the Bark iOS app — the part after api.day.app/).
+BARK_KEY="your-bark-device-key"
 
 # Seconds the terminal must stay unfocused before you get alerted.
 DELAY=30
@@ -11,10 +10,17 @@ DELAY=30
 # Focus poll interval in seconds.
 POLL_INTERVAL=3
 
-# Self-hosted ntfy server, if you run one. Defaults to the public ntfy.sh.
-# NTFY_SERVER="https://ntfy.sh"
+# Self-hosted Bark server, if you run one. Defaults to the public api.day.app.
+# BARK_SERVER="https://api.day.app"
 
-# Fallback app to focus on notification click if frontmost-app detection fails.
+# Per-category notification icons. MUST be HTTPS — iOS silently ignores
+# plain-HTTP notification icons and falls back to the default Bark icon.
+# Defaults point at sample icons; replace with your own image-host URLs.
+# ICON_APPROVAL="https://your-host/shield.png"    # permission/approval
+# ICON_QUESTION="https://your-host/question.png"  # AskUserQuestion
+# ICON_DONE="https://your-host/check.png"         # task finished
+
+# Fallback app to focus on notification click if frontmost detection fails.
 # FALLBACK_APP="com.apple.Terminal"
 
 # Path to terminal-notifier (brew install terminal-notifier).
